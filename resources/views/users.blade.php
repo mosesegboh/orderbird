@@ -8,8 +8,8 @@
   <title>List of users</title>
 </head>
 <body>
-  <div>
-    Use this template to solve the challenge.
+  <div id="app">
+    {{-- Use this template to solve the challenge. --}}
   </div>
   <script src="{{ asset('js/app.js') }}"></script>
 </body>

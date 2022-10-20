@@ -15,5 +15,8 @@ class Controller extends BaseController
     function getUsers()
     {
         return User::all();
+        $users =  User::all();
+        var_dump($users);
+        die();
     }
 }
