@@ -10,13 +10,13 @@ use App\Models\User;
 
 class Controller extends BaseController
 {
-    use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
+    use AuthorizesRequests;
+    use DispatchesJobs;
+    use ValidatesRequests;
 
-    function getUsers()
+    public function getUsers()
     {
         return User::all();
         $users =  User::all();
-        var_dump($users);
-        die();
     }
 }
