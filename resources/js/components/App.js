@@ -22,7 +22,10 @@ function App() {
 
   return (
     <Layout>
-      <User users={users} setUsers={setUsers}/>
+      <User
+        users={users}
+        setUsers={setUsers}
+      />
     </Layout>
   );
 }

@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from 'react';
+import React from 'react';
 
 function Sorter(props) {
   let {sort, sortBy} = props;
@@ -11,7 +11,9 @@ function Sorter(props) {
         strokeWidth={1.5}
         stroke="currentColor"
         onClick={() => sort(sortBy, 'asc')}
-        className="w-3 h-3 inline-block">
+        className="w-3 h-3 inline-block"
+        id="mySort"
+      >
           <path strokeLinecap="round"
             strokeLinejoin="round"
             d="M12 19.5v-15m0 0l-6.75 6.75M12 4.5l6.75 6.75"
@@ -25,6 +27,7 @@ function Sorter(props) {
         stroke="currentColor"
         onClick={() => sort(sortBy, 'desc')}
         className="w-3 h-3 inline-block"
+        id="mySortAsc"
       >
       <path
         strokeLinecap="round"

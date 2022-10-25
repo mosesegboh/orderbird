@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 
 const Modal = (props) => {
   const {trigger,children,setTrigger} = props

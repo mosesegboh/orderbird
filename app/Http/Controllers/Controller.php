@@ -17,6 +17,7 @@ class Controller extends BaseController
     public function getUsers()
     {
         return User::all();
+
         $users =  User::all();
     }
 }
